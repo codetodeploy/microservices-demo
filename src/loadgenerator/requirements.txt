@@ -27,7 +27,7 @@ flask-basicauth==0.2.0
     # via locust
 flask-cors==4.0.0
     # via locust
-gevent==23.7.0
+gevent==23.9.0
     # via
     #   geventhttpclient
     #   locust
@@ -35,11 +35,11 @@ geventhttpclient==2.0.9
     # via locust
 greenlet==2.0.2
     # via gevent
-idna==3.4
+idna==3.7
     # via requests
 itsdangerous==2.1.2
     # via flask
-jinja2==3.1.2
+jinja2==3.1.4
     # via flask
 locust==2.15.1
     # via -r requirements.in
@@ -61,9 +61,9 @@ six==1.16.0
     # via geventhttpclient
 typing-extensions==4.7.1
     # via locust
-urllib3==2.0.2
+urllib3==2.0.7
     # via requests
-werkzeug==2.3.6
+werkzeug==3.0.3
     # via
     #   flask
     #   locust
@@ -74,3 +74,4 @@ zope-interface==6.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
